@@ -84,7 +84,7 @@ nav{
     color: royalblue;
     text-transform: uppercase;
     letter-spacing: 6px;
-    font-size: 10px;
+    font-size: 17px;
   }
   .flex-row {
     display: flex;
@@ -99,9 +99,7 @@ nav{
     width: 50%;
     text-align: center;
   }
-  .col span {
-    
-  }
+ 
   #turnos h3 {
     margin: auto;
   }
@@ -120,8 +118,8 @@ nav{
     left: -205px;
     height: 225px;
   }
-  #image5, #image4, #image3,
-  #image2, #image1, #image0 {
+  #image1, #image2, #image3,
+  #image4, #image5, #image6 {
     opacity: 0;
     transition: opacity .3s ease;
   }
