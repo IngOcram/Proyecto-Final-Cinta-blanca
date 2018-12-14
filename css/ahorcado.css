@@ -45,7 +45,7 @@ nav{
     font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
     animation-duration: 3s;
     animation-name: slidein;
-    animation-iteration-count: infinite;
+    animation-iteration-count: initial;
   }
   h1#msg-final {
     text-align: center;
@@ -114,9 +114,9 @@ nav{
   }
   picture img {
     position: absolute;
-    top: -203px;
-    left: -205px;
-    height: 225px;
+    top: -100px;
+    left: -181px;
+    height: 150px;
   }
   #image1, #image2, #image3,
   #image4, #image5, #image6 {

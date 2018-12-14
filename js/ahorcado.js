@@ -4,7 +4,7 @@ var palabra = "";
 var rand;
 var oculta = [];
 var hueco = document.getElementById("palabra");
-var cont = 0;
+var cont = 6;
 var buttons = document.getElementsByClassName('letra');
 var btnInicio = document.getElementById("reset");
 
@@ -45,12 +45,12 @@ function intento(letra){
     document.getElementById ("acierto").innerHTML = "Bien!";
     document.getElementById ("acierto").className += "acierto verde";
   }else{
-    cont++;
+    cont--;
     document.getElementById ("intentos").innerHTML = cont;
     document.getElementById("intentos").innerHTML = cont;
     document.getElementById("acierto").innerHTML = "Fallo!";
     document.getElementById("acierto").className += "acierto rojo";
-    document.getElementById("image"+ cont).style.visibility = "visible"+ cont;
+    document.getElementById("image"+ cont).className += "fade-in";
  }
  compruebaFin();
   setTimeout(function () { 
