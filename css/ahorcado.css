@@ -14,7 +14,7 @@ nav{
 }
 
 .left-nav i, .home-banner i {
-    color: orangered;
+    color: rgb(12, 12, 12);
     }
 
 .home-banner i{
@@ -84,7 +84,7 @@ nav{
     color: royalblue;
     text-transform: uppercase;
     letter-spacing: 6px;
-    font-size: 17px;
+    font-size: 30px;
   }
   .flex-row {
     display: flex;

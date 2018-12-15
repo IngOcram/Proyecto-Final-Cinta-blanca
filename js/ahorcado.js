@@ -1,4 +1,3 @@
-
 var palabras = ["atlantico", "ordenador", "laurel", "plaza", "rueda", "cereza", "celular", "Roble", "guadalajara"]; 
 var palabra = "";
 var rand;
@@ -45,12 +44,19 @@ function intento(letra){
     document.getElementById ("acierto").innerHTML = "Bien!";
     document.getElementById ("acierto").className += "acierto verde";
   }else{
-    cont--;
-    document.getElementById ("intentos").innerHTML = cont;
-    document.getElementById("intentos").innerHTML = cont;
+    if (cont != 0 ){
+    document.getElementById ("intentos").innerHTML = cont -1;
+    document.getElementById("intentos").innerHTML = cont -1;
     document.getElementById("acierto").innerHTML = "Fallo!";
     document.getElementById("acierto").className += "acierto rojo";
     document.getElementById("image"+ cont).className += "fade-in";
+    cont--;
+    }else{
+    document.getElementById("msg-final").innerHTML = "Game Over";
+    alert("Game over");
+    }
+
+    
  }
  compruebaFin();
   setTimeout(function () { 
@@ -69,15 +75,7 @@ function compruebaFin(){
     }
     document.getElementById("reset").innerHTML = "Empezar";
     btnInicio.onclick = function() { location.reload() };
-  }else if( cont == 0 ) {
-    document.getElementById("msg-final").innerHTML = "Game Over";
-    document.getElementById("msg-final").className += "zoom-in";
-    for (var i = 0; i < buttons.length; i++) {
-      buttons[i].disabled = true;
-    }
-    document.getElementById("reset").innerHTML = "Empezar";
-    btnInicio.onclick = function () { location.reload() };
-}
+  }
 }
 function inicio() {
   generarPalabra();
