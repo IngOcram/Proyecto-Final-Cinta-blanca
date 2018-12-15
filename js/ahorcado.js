@@ -67,7 +67,6 @@ function intento(letra){
 
 function compruebaFin(){
   if (oculta.indexOf(" ") == -1) {
-    document.getElementById("msg-final").innerHTML = "felicidades !!";
     document.getElementById("msg-final").className += "zoom-in";
     document.getElementById("palabra").className += " encuadre";
     for (var i = 0; i < buttons.length; i++) {
